@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\controlador1;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/recordatorios',[controlador1::class, 'mostrarVista'])->name('recordatorios');
